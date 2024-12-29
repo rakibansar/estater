@@ -18,6 +18,9 @@ jobs:
       uses: actions/setup-java@v3
       with:
         java-version: '23' # Use Java 23
+        distribution: 'temurin' 
+    # or 'adopt' or 'liberica' or 'eclipse' depending on your preference
+    # ... other options as before ... 
 
     - name: Build with Maven
       run: |
